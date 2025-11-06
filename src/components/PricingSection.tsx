@@ -1,99 +1,120 @@
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Sofa, Armchair } from "lucide-react";
+import upholsteryImage from "@/assets/upholstery-cleaning.jpg";
+import rugImage from "@/assets/rug-cleaning.jpg";
+import mattressImage from "@/assets/mattress-cleaning.jpg";
+import stairsImage from "@/assets/stairs-cleaning.jpg";
+import carpetImage from "@/assets/carpet-cleaning.jpg";
+import commercialImage from "@/assets/commercial-cleaning.jpg";
 
 const services = [
   {
-    title: "3-Seater Sofa",
-    price: "€100",
-    icon: Sofa,
+    title: "Upholstery cleaning",
+    image: upholsteryImage,
+    pricing: [
+      { label: "3-seater sofa:", price: "€100" },
+      { label: "5-seater sofa:", price: "€160" },
+      { label: "Armchairs:", price: "€105" },
+      { label: "Dining chairs:", price: "€10" },
+    ],
+    note: "Additional €10 per cushion",
   },
   {
-    title: "5-Seater Sofa",
-    price: "€160",
-    icon: Sofa,
+    title: "Area rug cleaning",
+    image: rugImage,
+    pricing: [
+      { label: "Small:", price: "€40" },
+      { label: "Medium:", price: "€50", highlight: true },
+      { label: "Large:", price: "€60" },
+    ],
+    note: "Pricing based on rug size and material",
   },
   {
-    title: "Armchairs",
-    price: "€105",
-    icon: Armchair,
+    title: "Mattress Cleaning",
+    image: mattressImage,
+    pricing: [
+      { label: "Single bed mattress:", price: "€50" },
+      { label: "Double bed mattress:", price: "€60" },
+      { label: "King size mattress:", price: "€75" },
+    ],
+    note: "Headboard cleaning from €30",
   },
   {
-    title: "Dining Chairs",
-    price: "€10",
-    description: "per chair",
-    icon: Armchair,
+    title: "Stairs cleaning",
+    image: stairsImage,
+    startingPrice: "€75",
+    description: "Price varies by number of steps and layout. Discounts available for multiple staircases.",
   },
   {
-    title: "Cushions",
-    price: "€10",
-    description: "per cushion",
-    icon: Armchair,
+    title: "Carpet cleaning",
+    image: carpetImage,
+    startingPrice: "€40 per room",
+    description: "Price varies by room size. Discounts for multiple rooms.",
   },
   {
-    title: "Custom Quote",
-    price: "Contact Us",
-    description: "for other items",
-    icon: Sofa,
+    title: "Commercial Cleaning",
+    image: commercialImage,
+    customPricing: true,
+    description: "Tailored to your needs. Prices discussed individually based on scope and size.",
   },
 ];
 
 export const PricingSection = () => {
-  const scrollToContact = () => {
-    const element = document.getElementById("contact");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
-    <section id="pricing" className="py-20 bg-muted/30">
+    <section id="pricing" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12 space-y-4">
-          <h2 className="text-4xl font-bold">Upholstery Cleaning</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Professional cleaning services for all your furniture
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {services.map((service, index) => {
-            const Icon = service.icon;
-            return (
-              <Card
-                key={index}
-                className="p-6 space-y-4 hover:shadow-lg transition-shadow"
-              >
-                <div className="flex items-center justify-between">
-                  <div className="bg-primary/10 p-3 rounded-lg">
-                    <Icon className="w-6 h-6 text-primary" />
-                  </div>
-                  <div className="text-right">
-                    <div className="text-2xl font-bold text-primary">
-                      {service.price}
-                    </div>
-                    {service.description && (
-                      <div className="text-sm text-muted-foreground">
-                        {service.description}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+          {services.map((service, index) => (
+            <Card
+              key={index}
+              className="overflow-hidden hover:shadow-lg transition-shadow"
+            >
+              <div className="aspect-video relative overflow-hidden">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              
+              <div className="p-6 space-y-4">
+                <h3 className="text-xl font-bold">{service.title}</h3>
+                
+                {service.pricing && (
+                  <div className="space-y-2">
+                    {service.pricing.map((item, i) => (
+                      <div
+                        key={i}
+                        className={`flex justify-between items-center ${
+                          item.highlight ? "text-primary font-semibold" : ""
+                        }`}
+                      >
+                        <span className="text-sm">{item.label}</span>
+                        <span className="font-semibold">{item.price}</span>
                       </div>
-                    )}
+                    ))}
                   </div>
-                </div>
+                )}
 
-                <div>
-                  <h3 className="text-lg font-semibold">{service.title}</h3>
-                </div>
+                {service.startingPrice && (
+                  <div className="space-y-2">
+                    <p className="text-lg font-bold">
+                      Starting at {service.startingPrice}
+                    </p>
+                  </div>
+                )}
 
-                <Button
-                  onClick={scrollToContact}
-                  variant="outline"
-                  className="w-full"
-                >
-                  Book Now
-                </Button>
-              </Card>
-            );
-          })}
+                {service.customPricing && (
+                  <p className="text-lg font-bold">Custom Pricing</p>
+                )}
+
+                {(service.note || service.description) && (
+                  <p className="text-sm text-muted-foreground">
+                    {service.note || service.description}
+                  </p>
+                )}
+              </div>
+            </Card>
+          ))}
         </div>
       </div>
     </section>
