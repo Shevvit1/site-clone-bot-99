@@ -14,11 +14,11 @@ export const Navigation = () => {
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-            <span className="text-2xl font-bold text-primary-foreground">PC</span>
+            <span className="text-2xl font-bold text-primary-foreground">CS</span>
           </div>
           <div className="flex flex-col">
-            <span className="text-xl font-bold text-foreground">Pro Carpet</span>
-            <span className="text-xs text-muted-foreground">Professional Cleaning</span>
+            <span className="text-xl font-bold text-foreground">Clean Sofa</span>
+            <span className="text-xs text-muted-foreground">cleansofa.ie</span>
           </div>
         </div>
 
