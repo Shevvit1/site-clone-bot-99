@@ -22,7 +22,7 @@ export const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">Phone</h3>
-                  <p className="text-muted-foreground">+353 89 946 7764</p>
+                  <p className="text-muted-foreground">+353 87 371 9253</p>
                   <p className="text-sm text-muted-foreground">Mon-Sat: 8am - 6pm</p>
                 </div>
               </div>
@@ -33,7 +33,7 @@ export const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">Email</h3>
-                  <p className="text-muted-foreground">info@procarpet.ie</p>
+                  <p className="text-muted-foreground">cleansofa@gmail.com</p>
                 </div>
               </div>
 
@@ -43,14 +43,17 @@ export const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">Service Area</h3>
-                  <p className="text-muted-foreground">Dublin & surrounding areas</p>
+                  <p className="text-muted-foreground">Mullingar & surrounding areas</p>
                   <p className="text-sm text-muted-foreground">Free quotes available nationwide</p>
                 </div>
               </div>
             </div>
 
             <div className="pt-6">
-              <Button className="bg-primary hover:bg-primary/90 w-full sm:w-auto">
+              <Button 
+                className="bg-primary hover:bg-primary/90 w-full sm:w-auto"
+                onClick={() => window.open('https://wa.me/353873719253', '_blank')}
+              >
                 <MessageCircle className="w-5 h-5 mr-2" />
                 Chat on WhatsApp
               </Button>

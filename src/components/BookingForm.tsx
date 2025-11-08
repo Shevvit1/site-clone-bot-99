@@ -16,10 +16,17 @@ export const BookingForm = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    const message = `New Booking Request:\nName: ${formData.name}\nPhone: ${formData.phone}\nService: ${formData.service}\nDetails: ${formData.details}`;
+    const whatsappUrl = `https://wa.me/353873719253?text=${encodeURIComponent(message)}`;
+    
+    window.open(whatsappUrl, '_blank');
+    
     toast({
-      title: "Booking Request Sent!",
-      description: "We'll contact you shortly to confirm your appointment.",
+      title: "Opening WhatsApp",
+      description: "You'll be redirected to WhatsApp to send your booking request.",
     });
+    
     setFormData({ name: "", phone: "", service: "", details: "" });
   };
 
@@ -32,7 +39,7 @@ export const BookingForm = () => {
 
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="space-y-2">
-          <label className="text-sm font-medium">Full Name</label>
+          <label className="text-sm font-medium">Name</label>
           <Input
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
