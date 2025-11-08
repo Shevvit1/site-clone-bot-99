@@ -60,7 +60,7 @@ const services = [
 
 export const PricingSection = () => {
   return (
-    <section id="pricing" className="py-20 bg-background">
+    <section id="pricing" className="py-10 bg-background">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {services.map((service, index) => (

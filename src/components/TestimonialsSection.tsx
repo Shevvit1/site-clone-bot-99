@@ -4,7 +4,7 @@ import beforeAfter3 from "@/assets/before-after-3.jpg";
 
 export const TestimonialsSection = () => {
   return (
-    <section className="py-20 bg-secondary/20">
+    <section className="py-10 bg-secondary/20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 space-y-4">
           <h2 className="text-4xl font-bold">Witness the Transformation!</h2>
