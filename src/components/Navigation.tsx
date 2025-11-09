@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 export const Navigation = () => {
   const scrollToSection = (id: string) => {
@@ -12,14 +13,8 @@ export const Navigation = () => {
   return (
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="flex items-center space-x-2">
-          <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-            <span className="text-2xl font-bold text-primary-foreground">CS</span>
-          </div>
-          <div className="flex flex-col">
-            <span className="text-xl font-bold text-foreground">Clean Sofa</span>
-            <span className="text-xs text-muted-foreground">cleansofa.ie</span>
-          </div>
+        <div className="flex items-center space-x-3">
+          <img src={logo} alt="Clean Sofa Logo" className="h-16 w-auto" />
         </div>
 
         <div className="hidden md:flex items-center space-x-6">
