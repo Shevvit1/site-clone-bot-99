@@ -12,12 +12,20 @@ export const HeroSection = () => {
       <div className="container mx-auto px-4 py-12 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           {/* Main heading */}
-          <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-            Professional{" "}
-            <span className="text-primary">Carpet Cleaning</span>
+          <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
+            Clean Sofa 🇮🇪{" "}
+            <span className="text-primary">Professional Cleaning</span>{" "}
+            <span className="block mt-2 text-3xl lg:text-4xl">with a Family Touch</span>
           </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Transform your home with our expert cleaning services. Eco-friendly, professional, and affordable.
+          <p className="text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <span className="font-semibold text-foreground">Your Home Deserves the Best:</span> Professional Sofa, Mattress, and Carpet Cleaning in Mullingar.
+          </p>
+          <p className="text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            We are Clean Sofa—a dedicated family team, specializing in the deep cleaning of armchairs, rugs, and all soft furnishings. 
+            Restore the impeccable cleanliness of your home with our eco-friendly, reliable, and affordable services.
+          </p>
+          <p className="text-sm lg:text-base text-muted-foreground max-w-2xl mx-auto italic">
+            European cleaning quality, built on our experience and dedication — a flawless result is guaranteed.
           </p>
 
           {/* Features */}
