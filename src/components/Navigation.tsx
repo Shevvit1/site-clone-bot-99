@@ -1,7 +1,15 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, ChevronDown, Clover } from "lucide-react";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible";
 
 export const Navigation = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -13,8 +21,9 @@ export const Navigation = () => {
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-2">
-          <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-            <span className="text-2xl font-bold text-primary-foreground">CS</span>
+          <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center relative">
+            <Clover className="w-10 h-10 text-primary-foreground absolute" />
+            <span className="text-sm font-bold text-primary-foreground relative z-10">CS</span>
           </div>
           <div className="flex flex-col">
             <span className="text-xl font-bold text-foreground">Clean Sofa</span>
@@ -23,18 +32,53 @@ export const Navigation = () => {
         </div>
 
         <div className="hidden md:flex items-center space-x-6">
-          <button onClick={() => scrollToSection("services")} className="text-sm font-medium hover:text-primary transition-colors">
-            Services
-          </button>
-          <button onClick={() => scrollToSection("pricing")} className="text-sm font-medium hover:text-primary transition-colors">
-            Pricing
-          </button>
-          <button onClick={() => scrollToSection("about")} className="text-sm font-medium hover:text-primary transition-colors">
-            About Us
-          </button>
-          <button onClick={() => scrollToSection("contact")} className="text-sm font-medium hover:text-primary transition-colors">
-            Contact
-          </button>
+          <Collapsible open={isOpen} onOpenChange={setIsOpen}>
+            <CollapsibleTrigger className="flex items-center gap-2 text-sm font-medium hover:text-primary transition-colors">
+              Quick Links
+              <ChevronDown className={`h-4 w-4 transition-transform ${isOpen ? "rotate-180" : ""}`} />
+            </CollapsibleTrigger>
+            <CollapsibleContent className="absolute right-4 top-16 bg-background border rounded-lg shadow-lg p-4 min-w-[200px] z-50">
+              <nav className="flex flex-col space-y-3">
+                <button
+                  onClick={() => {
+                    scrollToSection("services");
+                    setIsOpen(false);
+                  }}
+                  className="text-sm font-medium hover:text-primary transition-colors text-left"
+                >
+                  Services
+                </button>
+                <button
+                  onClick={() => {
+                    scrollToSection("pricing");
+                    setIsOpen(false);
+                  }}
+                  className="text-sm font-medium hover:text-primary transition-colors text-left"
+                >
+                  Pricing
+                </button>
+                <button
+                  onClick={() => {
+                    scrollToSection("about");
+                    setIsOpen(false);
+                  }}
+                  className="text-sm font-medium hover:text-primary transition-colors text-left"
+                >
+                  About Us
+                </button>
+                <button
+                  onClick={() => {
+                    scrollToSection("contact");
+                    setIsOpen(false);
+                  }}
+                  className="text-sm font-medium hover:text-primary transition-colors text-left"
+                >
+                  Contact
+                </button>
+              </nav>
+            </CollapsibleContent>
+          </Collapsible>
+
           <Button 
             className="bg-primary hover:bg-primary/90"
             onClick={() => window.open('https://wa.me/353873719253', '_blank')}
