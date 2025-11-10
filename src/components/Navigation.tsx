@@ -31,13 +31,13 @@ export const Navigation = () => {
           </div>
         </div>
 
-        <div className="hidden md:flex items-center space-x-6">
-          <Collapsible open={isOpen} onOpenChange={setIsOpen}>
+        <div className="hidden md:flex items-center space-x-6 relative">
+          <Collapsible open={isOpen} onOpenChange={setIsOpen} className="relative">
             <CollapsibleTrigger className="flex items-center gap-2 text-sm font-medium hover:text-primary transition-colors">
               Quick Links
               <ChevronDown className={`h-4 w-4 transition-transform ${isOpen ? "rotate-180" : ""}`} />
             </CollapsibleTrigger>
-            <CollapsibleContent className="absolute right-4 top-16 bg-background border rounded-lg shadow-lg p-4 min-w-[200px] z-50">
+            <CollapsibleContent className="absolute right-0 top-full mt-2 bg-background border rounded-lg shadow-lg p-4 min-w-[200px] z-[100]">
               <nav className="flex flex-col space-y-3">
                 <button
                   onClick={() => {
