@@ -24,7 +24,7 @@ export const AboutSection = () => {
           <Accordion type="single" collapsible className="w-full space-y-4">
             <AccordionItem value="item-1" className="border rounded-lg px-6 bg-card">
               <AccordionTrigger className="text-left hover:no-underline">
-                What types of cleaning services do you offer?
+                What cleaning can you do for me?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
                 We specialize in professional deep cleaning of carpets, rugs, sofas, and armchairs (upholstery). Please contact us for a complete list of our specialized services.
@@ -33,7 +33,7 @@ export const AboutSection = () => {
 
             <AccordionItem value="item-2" className="border rounded-lg px-6 bg-card">
               <AccordionTrigger className="text-left hover:no-underline">
-                How do I book a cleaning service?
+                How do I book?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
                 Simply call or text us! We'll discuss the details, provide a precise quote, and schedule a convenient time for your service.
@@ -51,7 +51,7 @@ export const AboutSection = () => {
 
             <AccordionItem value="item-4" className="border rounded-lg px-6 bg-card">
               <AccordionTrigger className="text-left hover:no-underline">
-                What payment methods do you accept?
+                How can I pay you?
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground">
                 We accept cash payment and Revolut transfers. Payment is due upon completion of the job and your full satisfaction with the result.

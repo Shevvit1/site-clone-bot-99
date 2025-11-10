@@ -31,7 +31,17 @@ export const Navigation = () => {
           </div>
         </div>
 
-        <div className="hidden md:flex items-center space-x-6 relative">
+        <div className="hidden md:flex items-center space-x-6">
+          <Button 
+            className="bg-primary hover:bg-primary/90"
+            onClick={() => window.open('https://wa.me/353873719253', '_blank')}
+          >
+            <MessageCircle className="w-4 h-4 mr-2" />
+            WhatsApp Us
+          </Button>
+        </div>
+
+        <div className="md:hidden flex items-center space-x-2 relative">
           <Collapsible open={isOpen} onOpenChange={setIsOpen} className="relative">
             <CollapsibleTrigger className="flex items-center gap-2 text-sm font-medium hover:text-primary transition-colors">
               Quick Links
@@ -78,14 +88,6 @@ export const Navigation = () => {
               </nav>
             </CollapsibleContent>
           </Collapsible>
-
-          <Button 
-            className="bg-primary hover:bg-primary/90"
-            onClick={() => window.open('https://wa.me/353873719253', '_blank')}
-          >
-            <MessageCircle className="w-4 h-4 mr-2" />
-            WhatsApp Us
-          </Button>
         </div>
       </div>
     </nav>
