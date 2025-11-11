@@ -7,7 +7,7 @@ import {
 
 export const AboutSection = () => {
   return (
-    <section id="about" className="py-10 bg-background">
+    <section id="about" className="py-6 md:py-10 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center space-y-6">
           <h2 className="text-4xl font-bold">About Us</h2>
@@ -19,8 +19,8 @@ export const AboutSection = () => {
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto mt-16">
-          <h3 className="text-3xl font-bold text-center mb-8">❓ Quick Answers</h3>
+        <div className="max-w-3xl mx-auto mt-8 md:mt-16">
+          <h3 className="text-3xl font-bold text-center mb-4 md:mb-8">❓ Quick Answers</h3>
           <Accordion type="single" collapsible className="w-full space-y-4">
             <AccordionItem value="item-1" className="border rounded-lg px-6 bg-card">
               <AccordionTrigger className="text-left hover:no-underline">

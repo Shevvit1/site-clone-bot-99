@@ -9,7 +9,7 @@ export const HeroSection = () => {
       <div className="absolute top-1/3 right-20 w-40 h-40 rounded-full bg-[hsl(var(--pastel-blue))] opacity-50 blur-3xl" />
       <div className="absolute bottom-20 right-1/3 w-36 h-36 rounded-full bg-[hsl(var(--pastel-mint))] opacity-40 blur-3xl" />
 
-      <div className="container mx-auto px-4 py-12 relative z-10">
+      <div className="container mx-auto px-4 py-6 md:py-12 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           {/* Main heading */}
           <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
