@@ -84,9 +84,7 @@ export const PricingSection = () => {
                     {service.pricing.map((item, i) => (
                       <div
                         key={i}
-                        className={`flex justify-between items-center ${
-                          item.highlight ? "text-primary font-semibold" : ""
-                        }`}
+                        className="flex justify-between items-center"
                       >
                         <span className="text-sm">{item.label}</span>
                         <span className="font-semibold">{item.price}</span>

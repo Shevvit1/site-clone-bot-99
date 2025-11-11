@@ -14,7 +14,7 @@ export const TopBanner = () => {
           <span>5-Star Rated Cleaning Service</span>
         </div>
         <span className="hidden sm:inline">•</span>
-        <span className="hidden sm:inline">📞 Register now for exclusive deals!</span>
+        <span className="hidden sm:inline">☘️ Register now for exclusive deals!</span>
       </div>
       <button
         onClick={() => setIsVisible(false)}

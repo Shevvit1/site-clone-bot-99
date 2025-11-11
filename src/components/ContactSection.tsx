@@ -22,7 +22,9 @@ export const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">Phone</h3>
-                  <p className="text-muted-foreground">+353 87 371 9253</p>
+                  <a href="tel:+353873719253" className="text-muted-foreground hover:text-primary transition-colors">
+                    +353 87 371 9253
+                  </a>
                   <p className="text-sm text-muted-foreground">Mon-Sat: 8am - 6pm</p>
                 </div>
               </div>
@@ -33,7 +35,9 @@ export const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">Email</h3>
-                  <p className="text-muted-foreground">cleansofa@gmail.com</p>
+                  <a href="mailto:procleansofa@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                    procleansofa@gmail.com
+                  </a>
                 </div>
               </div>
 
