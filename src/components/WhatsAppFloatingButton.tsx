@@ -9,11 +9,11 @@ export const WhatsAppFloatingButton = () => {
   return (
     <Button
       onClick={handleWhatsAppClick}
-      className="fixed right-4 bottom-4 z-50 rounded-full shadow-lg hover:scale-110 transition-transform bg-[#25D366] hover:bg-[#20BA5A] px-6 py-3 h-auto"
+      className="fixed right-4 bottom-4 z-50 rounded-full shadow-lg hover:scale-110 transition-transform bg-[#25D366] hover:bg-[#20BA5A] px-4 py-2 md:px-6 md:py-3 h-auto"
       aria-label="Contact us on WhatsApp"
     >
-      <MessageCircle className="w-5 h-5 mr-2 text-white" />
-      <span className="text-white font-semibold">WhatsApp</span>
+      <MessageCircle className="w-4 h-4 md:w-5 md:h-5 mr-1 md:mr-2 text-white" />
+      <span className="text-white font-semibold text-sm md:text-base">WhatsApp</span>
     </Button>
   );
 };
