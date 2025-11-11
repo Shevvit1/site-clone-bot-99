@@ -26,8 +26,8 @@ export const Navigation = () => {
             <span className="text-sm font-bold text-primary-foreground relative z-10">CS</span>
           </div>
           <div className="flex flex-col">
-            <span className="text-xl font-bold text-foreground">Clean Sofa</span>
-            <span className="text-xs text-muted-foreground">cleansofa.ie</span>
+            <span className="text-2xl font-bold text-primary">Clean Sofa</span>
+            <span className="text-sm text-primary">cleansofa.ie</span>
           </div>
         </div>
 

@@ -18,10 +18,11 @@ export const HeroSection = () => {
             <span className="block mt-2 text-3xl lg:text-4xl">with a Family Touch</span>
           </h1>
           <p className="text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            <span className="font-semibold text-foreground">Your Home Deserves the Best:</span> Professional Sofa, Mattress, and Carpet Cleaning in Mullingar.
+            <span className="font-semibold text-foreground block">Your Home Deserves the Best:</span>
+            Professional Sofa, Mattress, and Carpet Cleaning in Mullingar.
           </p>
           <p className="text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            We are Clean Sofa—a dedicated family team, specializing in the deep cleaning of armchairs, rugs, and all soft furnishings. 
+            We are Clean Sofa–a dedicated family team, specializing in the deep cleaning of armchairs, rugs, and all soft furnishings. 
             Restore the impeccable cleanliness of your home with our eco-friendly, reliable, and affordable services.
           </p>
           <p className="text-sm lg:text-base text-muted-foreground max-w-2xl mx-auto italic">
