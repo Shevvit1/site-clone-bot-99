@@ -8,7 +8,7 @@ export const TestimonialsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-6 md:mb-12 space-y-4">
           <h2 className="text-4xl font-bold">Witness the Transformation!</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
             Don't just take our word for it–see the undeniable difference! These authentic client photos are powerful proof of the outstanding, professional results our team consistently delivers.
           </p>
         </div>
