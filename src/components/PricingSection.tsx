@@ -11,9 +11,9 @@ const services = [
     title: "Upholstery cleaning",
     image: upholsteryImage,
     pricing: [
-      { label: "3-seater sofa:", price: "€100" },
-      { label: "5-seater sofa:", price: "€160" },
-      { label: "Armchairs:", price: "€105" },
+      { label: "3-seater sofa:", price: "€60" },
+      { label: "5-seater sofa:", price: "€90" },
+      { label: "Armchair:", price: "€30" },
       { label: "Dining chairs:", price: "€10" },
     ],
     note: "Additional €10 per cushion",
@@ -21,13 +21,13 @@ const services = [
   {
     title: "Carpet cleaning",
     image: carpetImage,
-    startingPrice: "€40 per room",
+    startingPrice: "Starting at €40 per room",
     description: "Price varies by room size. Discounts for multiple rooms.",
   },
   {
     title: "Stairs cleaning",
     image: stairsImage,
-    startingPrice: "€75",
+    startingPrice: "Hall, stairs and landing carpet – starting at €65",
     description: "Price varies by number of steps and layout. Discounts available for multiple staircases.",
   },
   {
@@ -44,9 +44,9 @@ const services = [
     title: "Area rug cleaning",
     image: rugImage,
     pricing: [
-      { label: "Small:", price: "€40" },
-      { label: "Medium:", price: "€50", highlight: true },
-      { label: "Large:", price: "€60" },
+      { label: "Small:", price: "€30" },
+      { label: "Medium:", price: "€40" },
+      { label: "Large:", price: "€50" },
     ],
     note: "Pricing based on rug size and material",
   },
@@ -96,7 +96,7 @@ export const PricingSection = () => {
                 {service.startingPrice && (
                   <div className="space-y-2">
                     <p className="text-lg font-bold">
-                      Starting at {service.startingPrice}
+                      {service.startingPrice}
                     </p>
                   </div>
                 )}
