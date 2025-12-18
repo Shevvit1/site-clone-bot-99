@@ -22,8 +22,8 @@ export const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">Phone</h3>
-                  <a href="tel:+353873719253" className="text-muted-foreground hover:text-primary transition-colors">
-                    +353 87 371 9253
+                  <a href="tel:+353894791217" className="text-muted-foreground hover:text-primary transition-colors">
+                    +353 89 479 1217
                   </a>
                   <p className="text-sm text-muted-foreground">Mon-Sat: 8am - 6pm</p>
                 </div>
@@ -35,8 +35,8 @@ export const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">Email</h3>
-                  <a href="mailto:procleansofa@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
-                    procleansofa@gmail.com
+                  <a href="mailto:cleansofa.ie@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                    cleansofa.ie@gmail.com
                   </a>
                 </div>
               </div>
@@ -56,7 +56,7 @@ export const ContactSection = () => {
             <div className="pt-6">
               <Button 
                 className="bg-primary hover:bg-primary/90 w-full sm:w-auto"
-                onClick={() => window.open('https://wa.me/353873719253', '_blank')}
+                onClick={() => window.open('https://wa.me/353894791217', '_blank')}
               >
                 <MessageCircle className="w-5 h-5 mr-2" />
                 Chat on WhatsApp

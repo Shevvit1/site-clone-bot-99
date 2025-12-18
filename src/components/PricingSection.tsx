@@ -19,14 +19,16 @@ const services = [
     note: "Additional €10 per cushion",
   },
   {
-    title: "Area rug cleaning",
-    image: rugImage,
-    pricing: [
-      { label: "Small:", price: "€40" },
-      { label: "Medium:", price: "€50", highlight: true },
-      { label: "Large:", price: "€60" },
-    ],
-    note: "Pricing based on rug size and material",
+    title: "Carpet cleaning",
+    image: carpetImage,
+    startingPrice: "€40 per room",
+    description: "Price varies by room size. Discounts for multiple rooms.",
+  },
+  {
+    title: "Stairs cleaning",
+    image: stairsImage,
+    startingPrice: "€75",
+    description: "Price varies by number of steps and layout. Discounts available for multiple staircases.",
   },
   {
     title: "Mattress Cleaning",
@@ -39,16 +41,14 @@ const services = [
     note: "Headboard cleaning from €30",
   },
   {
-    title: "Stairs cleaning",
-    image: stairsImage,
-    startingPrice: "€75",
-    description: "Price varies by number of steps and layout. Discounts available for multiple staircases.",
-  },
-  {
-    title: "Carpet cleaning",
-    image: carpetImage,
-    startingPrice: "€40 per room",
-    description: "Price varies by room size. Discounts for multiple rooms.",
+    title: "Area rug cleaning",
+    image: rugImage,
+    pricing: [
+      { label: "Small:", price: "€40" },
+      { label: "Medium:", price: "€50", highlight: true },
+      { label: "Large:", price: "€60" },
+    ],
+    note: "Pricing based on rug size and material",
   },
   {
     title: "Commercial Cleaning",
