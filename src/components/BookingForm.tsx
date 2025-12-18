@@ -18,7 +18,7 @@ export const BookingForm = () => {
     e.preventDefault();
     
     const message = `New Booking Request:\nName: ${formData.name}\nPhone: ${formData.phone}\nService: ${formData.service}\nDetails: ${formData.details}`;
-    const whatsappUrl = `https://wa.me/353873719253?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/353894791217?text=${encodeURIComponent(message)}`;
     
     window.open(whatsappUrl, '_blank');
     

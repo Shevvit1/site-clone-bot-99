@@ -34,7 +34,7 @@ export const Navigation = () => {
         <div className="hidden md:flex items-center space-x-6">
           <Button 
             className="bg-primary hover:bg-primary/90"
-            onClick={() => window.open('https://wa.me/353873719253', '_blank')}
+            onClick={() => window.open('https://wa.me/353894791217', '_blank')}
           >
             <MessageCircle className="w-4 h-4 mr-2" />
             WhatsApp Us
