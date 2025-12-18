@@ -27,7 +27,8 @@ const services = [
   {
     title: "Stairs cleaning",
     image: stairsImage,
-    startingPrice: "Hall, stairs and landing carpet – starting at €65",
+    startingPriceLine1: "Hall, stairs and landing carpet",
+    startingPriceLine2: "starting at €65",
     description: "Price varies by number of steps and layout. Discounts available for multiple staircases.",
   },
   {
@@ -97,6 +98,17 @@ export const PricingSection = () => {
                   <div className="space-y-2">
                     <p className="text-lg font-bold">
                       {service.startingPrice}
+                    </p>
+                  </div>
+                )}
+
+                {service.startingPriceLine1 && (
+                  <div className="space-y-1">
+                    <p className="text-lg font-bold">
+                      {service.startingPriceLine1}
+                    </p>
+                    <p className="text-lg font-bold">
+                      {service.startingPriceLine2}
                     </p>
                   </div>
                 )}

@@ -32,6 +32,30 @@ export const Navigation = () => {
         </div>
 
         <div className="hidden md:flex items-center space-x-6">
+          <button
+            onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
+            className="text-sm font-medium hover:text-primary transition-colors"
+          >
+            Services
+          </button>
+          <button
+            onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
+            className="text-sm font-medium hover:text-primary transition-colors"
+          >
+            Pricing
+          </button>
+          <button
+            onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
+            className="text-sm font-medium hover:text-primary transition-colors"
+          >
+            About Us
+          </button>
+          <button
+            onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+            className="text-sm font-medium hover:text-primary transition-colors"
+          >
+            Contact
+          </button>
           <Button 
             className="bg-primary hover:bg-primary/90"
             onClick={() => window.open('https://wa.me/353894791217', '_blank')}
