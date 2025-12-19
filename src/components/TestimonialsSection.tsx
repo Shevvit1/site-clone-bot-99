@@ -17,21 +17,21 @@ export const TestimonialsSection = () => {
           <div className="overflow-hidden rounded-lg shadow-lg">
             <img
               src={beforeAfter1}
-              alt="Before and after sofa cleaning transformation"
+              alt="Before and after sofa deep cleaning results Mullingar"
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>
           <div className="overflow-hidden rounded-lg shadow-lg">
             <img
               src={beforeAfter2}
-              alt="Before and after armchair cleaning transformation"
+              alt="Deep armchair cleaning before and after transformation"
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>
           <div className="overflow-hidden rounded-lg shadow-lg">
             <img
               src={beforeAfter3}
-              alt="Before and after carpet cleaning transformation"
+              alt="Professional carpet cleaning results before and after"
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>

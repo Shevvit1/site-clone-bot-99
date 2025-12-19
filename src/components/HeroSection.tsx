@@ -13,9 +13,9 @@ export const HeroSection = () => {
         <div className="max-w-4xl mx-auto text-center space-y-8">
           {/* Main heading */}
           <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
-            Clean Sofa ☘️{" "}
-            <span className="text-primary">Professional Cleaning</span>{" "}
-            <span className="block mt-2 text-3xl lg:text-4xl">with a Family Touch</span>
+            Professional Carpet, Sofa & Mattress{" "}
+            <span className="text-primary">Cleaning in Mullingar</span>{" "}
+            <span className="block mt-2 text-3xl lg:text-4xl">☘️ with a Family Touch</span>
           </h1>
           <p className="text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             <span className="font-semibold text-foreground block">Your Home Deserves the Best:</span>
