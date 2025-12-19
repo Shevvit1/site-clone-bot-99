@@ -10,6 +10,7 @@ const services = [
   {
     title: "Upholstery cleaning",
     image: upholsteryImage,
+    altText: "Professional sofa and upholstery deep cleaning Mullingar",
     pricing: [
       { label: "3-seater sofa:", price: "€60" },
       { label: "5-seater sofa:", price: "€90" },
@@ -21,12 +22,14 @@ const services = [
   {
     title: "Carpet cleaning",
     image: carpetImage,
+    altText: "Deep carpet cleaning services in Mullingar Westmeath",
     startingPrice: "Starting at €40 per room",
     description: "Price varies by room size. Discounts for multiple rooms.",
   },
   {
     title: "Stairs cleaning",
     image: stairsImage,
+    altText: "Professional carpet cleaning for stairs and hallways Mullingar",
     startingPriceLine1: "Hall, stairs and landing carpet",
     startingPriceLine2: "starting at €65",
     description: "Price varies by number of steps and layout. Discounts available for multiple staircases.",
@@ -34,6 +37,7 @@ const services = [
   {
     title: "Mattress Cleaning",
     image: mattressImage,
+    altText: "Deep mattress cleaning and sanitizing service Mullingar",
     pricing: [
       { label: "Single bed mattress:", price: "€50" },
       { label: "Double bed mattress:", price: "€60" },
@@ -44,6 +48,7 @@ const services = [
   {
     title: "Area rug cleaning",
     image: rugImage,
+    altText: "Professional rug deep cleaning service in Mullingar",
     pricing: [
       { label: "Small:", price: "€30" },
       { label: "Medium:", price: "€40" },
@@ -54,6 +59,7 @@ const services = [
   {
     title: "Commercial Cleaning",
     image: commercialImage,
+    altText: "Commercial carpet and upholstery cleaning Mullingar",
     customPricing: true,
     description: "Tailored to your needs. Prices discussed individually based on scope and size.",
   },
@@ -72,7 +78,7 @@ export const PricingSection = () => {
               <div className="aspect-video relative overflow-hidden">
                 <img
                   src={service.image}
-                  alt={service.title}
+                  alt={service.altText}
                   className="w-full h-full object-cover"
                 />
               </div>
