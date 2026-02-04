@@ -13,7 +13,7 @@ export const HeroSection = () => {
         <div className="max-w-4xl mx-auto text-center space-y-8">
           {/* Main heading */}
           <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
-            Professional Carpet, Sofa & Mattress{" "}
+            Professional Carpet, Sofa & Upholstery{" "}
             <span className="text-primary">Cleaning in Mullingar</span>{" "}
             <span className="block mt-2 text-3xl lg:text-4xl">☘️ with a Family Touch</span>
           </h1>

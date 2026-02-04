@@ -81,7 +81,9 @@ export const PricingSection = () => {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="overflow-hidden hover:shadow-lg transition-shadow"
+              className={`overflow-hidden hover:shadow-lg transition-shadow ${
+                service.title === "Window Cleaning" ? "lg:col-start-2" : ""
+              }`}
             >
               <div className="aspect-video relative overflow-hidden">
                 <img
