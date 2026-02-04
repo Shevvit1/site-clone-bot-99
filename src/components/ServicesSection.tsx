@@ -1,4 +1,4 @@
-import { Sofa, Home, Package, Bed, Building, Sparkles } from "lucide-react";
+import { Sofa, Home, Package, Bed, Building, Sparkles, Droplets } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const services = [
@@ -31,6 +31,11 @@ const services = [
     icon: Sparkles,
     title: "Custom Solutions",
     description: "Tailored cleaning packages for your specific needs",
+  },
+  {
+    icon: Droplets,
+    title: "Window Cleaning",
+    description: "Long-reach pole cleaning. No ladders required. 1st & 2nd floor access",
   },
 ];
 
