@@ -5,6 +5,7 @@ import mattressImage from "@/assets/mattress-cleaning.jpg";
 import stairsImage from "@/assets/stairs-cleaning.jpg";
 import carpetImage from "@/assets/carpet-cleaning.jpg";
 import commercialImage from "@/assets/commercial-cleaning.jpg";
+import windowCleaningImage from "@/assets/window-cleaning.png";
 
 const services = [
   {
@@ -62,6 +63,13 @@ const services = [
     altText: "Commercial carpet and upholstery cleaning Mullingar",
     customPricing: true,
     description: "Tailored to your needs. Prices discussed individually based on scope and size.",
+  },
+  {
+    title: "Window Cleaning",
+    image: windowCleaningImage,
+    altText: "Professional window cleaning with long-reach poles Mullingar",
+    customPricing: true,
+    description: "Professional cleaning for ground and upper floor windows. We use long-reach poles for safe access to 1st and 2nd floors, providing a reliable service for your home.",
   },
 ];
 

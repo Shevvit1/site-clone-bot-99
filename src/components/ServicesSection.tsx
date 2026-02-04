@@ -35,7 +35,8 @@ const services = [
   {
     icon: Droplets,
     title: "Window Cleaning",
-    description: "Long-reach pole cleaning. No ladders required. 1st & 2nd floor access",
+    description: "Long-reach pole cleaning. No ladders required.",
+    additionalLine: "1st & 2nd floor access",
   },
 ];
 
@@ -57,9 +58,18 @@ export const ServicesSection = () => {
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
                   <service.icon className="w-6 h-6 text-primary" />
                 </div>
-                <div className="space-y-2">
+                <div className="space-y-2 md:text-center md:flex-1">
                   <h3 className="text-xl font-semibold">{service.title}</h3>
-                  <p className="text-muted-foreground">{service.description}</p>
+                  <p className="text-muted-foreground">
+                    {service.description}
+                    {service.additionalLine && (
+                      <>
+                        <br className="md:hidden" />
+                        <span className="hidden md:inline"> </span>
+                        {service.additionalLine}
+                      </>
+                    )}
+                  </p>
                 </div>
               </div>
             </Card>
