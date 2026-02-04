@@ -1,6 +1,8 @@
 import beforeAfter1 from "@/assets/before-after-1.jpg";
 import beforeAfter2 from "@/assets/before-after-2.jpg";
 import beforeAfter3 from "@/assets/before-after-3.jpg";
+import beforeAfter4 from "@/assets/before-after-4.png";
+import beforeAfter5 from "@/assets/before-after-5.png";
 
 export const TestimonialsSection = () => {
   return (
@@ -13,7 +15,7 @@ export const TestimonialsSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <div className="overflow-hidden rounded-lg shadow-lg">
             <img
               src={beforeAfter1}
@@ -32,6 +34,20 @@ export const TestimonialsSection = () => {
             <img
               src={beforeAfter3}
               alt="Professional carpet cleaning results before and after"
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div className="overflow-hidden rounded-lg shadow-lg">
+            <img
+              src={beforeAfter4}
+              alt="Professional window cleaning with long-reach pole Mullingar"
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div className="overflow-hidden rounded-lg shadow-lg">
+            <img
+              src={beforeAfter5}
+              alt="Window cleaning service results Mullingar"
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>
