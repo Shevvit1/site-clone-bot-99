@@ -37,14 +37,18 @@ export const TestimonialsSection = () => {
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>
-          <div className="overflow-hidden rounded-lg shadow-lg">
+        </div>
+        
+        {/* Window cleaning images - centered on desktop */}
+        <div className="flex flex-col sm:flex-row gap-8 max-w-4xl mx-auto mt-8 justify-center">
+          <div className="overflow-hidden rounded-lg shadow-lg sm:w-1/2 lg:w-auto">
             <img
               src={beforeAfter4}
               alt="Professional window cleaning with long-reach pole Mullingar"
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>
-          <div className="overflow-hidden rounded-lg shadow-lg">
+          <div className="overflow-hidden rounded-lg shadow-lg sm:w-1/2 lg:w-auto">
             <img
               src={beforeAfter5}
               alt="Window cleaning service results Mullingar"
